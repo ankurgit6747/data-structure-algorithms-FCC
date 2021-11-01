@@ -13,7 +13,7 @@ function Queue() {
         collection.push(element);
     }
 
-    // Remove first item of the array
+    // Remove first item of the array or at the begining of array
     this.dequeue = function(){
         collection.shift();
     }
@@ -22,7 +22,7 @@ function Queue() {
         return collection[0];
     }
 
-    this.seze = function(){
+    this.size = function(){
         return collection.length
     }
 
