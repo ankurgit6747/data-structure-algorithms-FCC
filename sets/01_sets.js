@@ -1,5 +1,6 @@
 // Kind of like array
 // Their is no dublicate items and the values are not in particular order
+// stack is first in last out
 
 function mySet() {
   //this collection will hold the sets
@@ -89,15 +90,21 @@ function mySet() {
 
 var setA = new mySet();
 var setB = new mySet();
-setA.add('a')
-setB.add('b')
-setB.add('c')
-setB.add('a')
-setB.add('d')
-setB.add('d')
-setB.add('d')
-setB.add('d')
-setB.add('d')
 
-console.log(setA.subset(setB));
-console.log(setA.intersection(setB).values());
+setA.add('A')
+setA.add('n')
+setA.add('k')
+setA.add('u')
+setA.add('r')
+setA.add('s')
+setA.remove('s')
+
+setB.add('A')
+setB.add('n')
+setB.add('u')
+setB.add('p')
+setB.add('p')
+
+console.log(setA.values());
+
+
